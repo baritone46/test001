@@ -11,13 +11,15 @@
   background: #333;
   color: #FFF;
   border-top: 1px solid #fff;
+  font-size: clamp(12px,1rem + 3vw,24px);
 }
 .accordion-contents {
   margin: 0;
   padding: 10px;
+  border: 1px solid: #ccc;
+  font-size: clamp(12px,1rem + 3vw,24px);
 /*ディスプレイ追記*/
   display: none;
-  border: 1px solid: #ccc;
 }
 
 @media screen and (min-width: 481px) {
