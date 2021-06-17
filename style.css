@@ -26,11 +26,16 @@
     max-width: 481px;
     margin: 0 auto;
   }
+  .accordion-contents {
+    background-color: yellow;
 }
 @media screen and (min-width: 960px) {
 	/* 960px以上に適用されるCSS（PC用） */
   .accordion {
     max-width: 960px;
     margin: 0 auto;
+  }
+  .accordion-contents {
+    background-color: aqua;
   }
 }
