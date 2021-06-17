@@ -1,5 +1,8 @@
+
+/* スマホ用のCSSはメディアクエリの外に記述する */
+
 .accordion {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 .accordion-trigger {
@@ -12,8 +15,23 @@
 }
 .accordion-contents {
   margin: 0;
-  padding: 10px;
+  padding: 10px; */
 /*ディスプレイ追記*/
   display: none;
   border: 1px solid: #ccc;
+}
+
+@media screen and (min-width: 481px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+  .accordion {
+    max-width: 481px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+  .accordion {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
